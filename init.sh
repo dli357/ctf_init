@@ -5,8 +5,11 @@ apt -y upgrade
 apt -y autoremove
 apt -y install build-essential
 apt -y install libc6:i386
+apt -y install libc6-dev-i386
 apt -y install libncurses5:i386
 apt -y install libstdc++6:i386
+apt -y install nasm
+apt -y install yasm
 
 # Set core pattern and core dump folder
 syctl -w kernel.core_pattern=/tmp/core.%u.%e.%p
